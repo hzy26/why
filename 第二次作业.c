@@ -1,26 +1,26 @@
-//3.5ÓÃconst³£Á¿¶¨Òå ¦Ğ 
+//3.5ç”¨constå¸¸é‡å®šä¹‰ Ï€ 
 #include<stdio.h>
 int main(void) 
 {
 	const double PI = 3.14159;
 	double r;
-	printf("ÇëÊäÈëÇòµÄ°ë¾¶£º\n");
+	printf("è¯·è¾“å…¥çƒçš„åŠå¾„ï¼š\n");
 	scanf("%lf",&r);
-	printf("ÇòµÄÌå»ıÎª£º%lf\n", PI*r*r*r);
-	printf("ÇòµÄ±íÃæ»ıÎª£º%lf\n", 4*PI*r*r);
+	printf("çƒçš„ä½“ç§¯ä¸ºï¼š%lf\n", PI*r*r*r);
+	printf("çƒçš„è¡¨é¢ç§¯ä¸ºï¼š%lf\n", 4*PI*r*r);
 	return 0;
 }
 
-//3.5ÓÃºê¶¨Òå ¦Ğ 
+//3.5ç”¨å®å®šä¹‰ Ï€ 
 #include<stdio.h>
 #define PI 3.14159
 int main(void) 
 {
 	double r;
-	printf("ÇëÊäÈëÇòµÄ°ë¾¶£º\n");
+	printf("è¯·è¾“å…¥çƒçš„åŠå¾„ï¼š\n");
 	scanf("%lf",&r);
-	printf("ÇòµÄÌå»ıÎª£º%lf\n", PI*r*r*r);
-	printf("ÇòµÄ±íÃæ»ıÎª£º%lf\n", 4*PI*r*r);
+	printf("çƒçš„ä½“ç§¯ä¸ºï¼š%lf\n", PI*r*r*r);
+	printf("çƒçš„è¡¨é¢ç§¯ä¸ºï¼š%lf\n", 4*PI*r*r);
 	return 0;
 }
 
@@ -30,14 +30,14 @@ int main(void)
 int main(void) 
 {
 	int a, b, c;
-	printf("ÇëÒÀ´ÎÊäÈëÈı½ÇĞÎÈı±ßµÄ³¤(ÓÃ¿Õ¸ñ·Ö¸ô4)£º\n");
+	printf("è¯·ä¾æ¬¡è¾“å…¥ä¸‰è§’å½¢ä¸‰è¾¹çš„é•¿(ç”¨ç©ºæ ¼åˆ†éš”4)ï¼š\n");
 	scanf("%d %d%d",&a, &b, &c);
 	if (a+b>c && a+c>b && b+c>a)
 	{
 	double s = (a+b+c)/2, area = sqrt(s*(s-a)*(s-b)*(s-c));
-	printf("Èı½ÇĞÎµÄÃæ»ıÎª£º%.2lf\n",area); 
+	printf("ä¸‰è§’å½¢çš„é¢ç§¯ä¸ºï¼š%.2lf\n",area); 
 	}
-	else printf("ÊäÈë±ß³¤ÎŞ·¨¹¹³ÉÈı½ÇĞÎ£¡\n");
+	else printf("è¾“å…¥è¾¹é•¿æ— æ³•æ„æˆä¸‰è§’å½¢ï¼\n");
 	return 0;
 }
 
@@ -62,16 +62,16 @@ int main(void)
 {
 	double faHeight,moHeight,yourHeight;
 	char sex,sport,diet;
-	printf("Çë·Ö±ğÊäÈëÄã¸¸Ç×ºÍÄ¸Ç×µÄÉí¸ß(cm)£¨ÓÃ¿Õ¸ñ·Ö¸ô£©£º\n"); 
+	printf("è¯·åˆ†åˆ«è¾“å…¥ä½ çˆ¶äº²å’Œæ¯äº²çš„èº«é«˜(cm)ï¼ˆç”¨ç©ºæ ¼åˆ†éš”ï¼‰ï¼š\n"); 
 	scanf("%lf %lf",&faHeight,&moHeight);
     getchar();
-	printf("ÇëÊäÈëÄãµÄĞÔ±ğ£¨ÄĞ(M)Å®(F)£©£º\n"); 
+	printf("è¯·è¾“å…¥ä½ çš„æ€§åˆ«ï¼ˆç”·(M)å¥³(F)ï¼‰ï¼š\n"); 
 	scanf("%c",&sex); 
 	getchar();
-	printf("ÊÇ(Y)·ñ(N)Ï²°®ÌåÓı¶ÍÁ¶£º\n");
+	printf("æ˜¯(Y)å¦(N)å–œçˆ±ä½“è‚²é”»ç‚¼ï¼š\n");
 	scanf("%c",&sport);
 	getchar();
-	printf("ÊÇ(Y)·ñ(N)ÓĞÁ¼ºÃµÄÒûÊ³Ï°¹ß£º\n");
+	printf("æ˜¯(Y)å¦(N)æœ‰è‰¯å¥½çš„é¥®é£Ÿä¹ æƒ¯ï¼š\n");
 	scanf("%c",&diet);
 	if(sex == 'M') {
 		if(sport == 'Y' && diet == 'Y') yourHeight = (faHeight+moHeight) * 0.54 * 1.02 * 1.015;
@@ -85,9 +85,10 @@ int main(void)
 		else if(sport == 'N' && diet == 'Y') yourHeight = (faHeight*0.923+moHeight) / 2 * 1.015;
 		else if(sport == 'N' && diet == 'N') yourHeight = (faHeight*0.923+moHeight) / 2;
 	}
-	printf("ÄãµÄÉí¸ßÎª£º%.2lf", yourHeight);
+	printf("ä½ çš„èº«é«˜ä¸ºï¼š%.2lf", yourHeight);
 	return 0;
 }
+
 
 
 
